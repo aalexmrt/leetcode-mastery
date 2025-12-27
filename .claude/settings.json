@@ -1,0 +1,11 @@
+{
+  "name": "LeetCode Mastery",
+  "description": "DSA practice following the NeetCode 150 roadmap",
+  "instructions": ".claude/INSTRUCTIONS.md",
+  "language": "python",
+  "context": {
+    "patterns_dir": "patterns/",
+    "solutions_dir": "solutions/",
+    "templates_dir": "templates/"
+  }
+}
