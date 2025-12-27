@@ -3,7 +3,7 @@ LeetCode 1: Two Sum
 ===================
 Difficulty: Easy
 Pattern: Arrays & Hashing
-Date Solved: YYYY-MM-DD
+Date Solved: 2025-12-27
 
 Problem:
 Given an array of integers nums and an integer target, return indices 

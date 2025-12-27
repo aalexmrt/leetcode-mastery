@@ -122,3 +122,14 @@ def solve(nums):
 - **Two Pointers**: Often an alternative when array is sorted
 - **Sliding Window**: When dealing with contiguous subarrays
 - **Prefix Sum**: When dealing with subarray sums
+
+---
+
+## My Learnings
+
+### Two Sum (2025-12-27)
+- **Brute force first**: Started with O(n²) nested loops, checking every pair
+- **Optimization insight**: Instead of searching for the complement each time, store what we've seen
+- **Hash map key insight**: Store `{value: index}` so we can instantly check if complement exists
+- **Python gotcha**: Use `if key in dict:` not `if dict.get(key):` (fails when value is 0)
+- **Python gotcha**: Use `dict[key] = value` to add, not `dict = {key: value}` (overwrites entire dict)

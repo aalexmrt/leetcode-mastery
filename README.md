@@ -6,7 +6,7 @@ My journey to mastering Data Structures & Algorithms through the **NeetCode 150*
 
 | Category | Progress | Status |
 |----------|----------|--------|
-| Arrays & Hashing | 0/9 | 🔴 |
+| Arrays & Hashing | 1/9 | 🟡 |
 | Two Pointers | 0/5 | 🔴 |
 | Sliding Window | 0/6 | 🔴 |
 | Stack | 0/6 | 🔴 |
@@ -25,7 +25,7 @@ My journey to mastering Data Structures & Algorithms through the **NeetCode 150*
 | Math & Geometry | 0/8 | 🔴 |
 | Bit Manipulation | 0/7 | 🔴 |
 
-**Total: 0/150** (0%)
+**Total: 1/150** (0.7%)
 
 Legend: 🔴 Not Started | 🟡 In Progress | 🟢 Complete
 
@@ -107,5 +107,5 @@ claude
 
 ---
 
-*Started: [DATE]*
-*Target Completion: [DATE + 4 months]*
+*Started: December 27, 2025*
+*Target Completion: April 27, 2026*
