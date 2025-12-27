@@ -7,33 +7,29 @@ from typing import List
 
 
 # =============================================================================
-# CURRENT PROBLEM: Two Sum (LeetCode 1)
+# CURRENT PROBLEM: Contains Duplicate (LeetCode 217)
 # =============================================================================
 """
-Given an array of integers nums and an integer target, return indices
-of the two numbers such that they add up to target.
+Given an integer array nums, return true if any value appears at least twice,
+and false if every element is distinct.
 
-Example: nums = [2, 7, 11, 15], target = 9 → [0, 1]
+Example 1: nums = [1, 2, 3, 1] → true
+Example 2: nums = [1, 2, 3, 4] → false
 """
 
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        seen = {}
-        for x in range(len(nums)):
-            num = nums[x]
-            # print(num, 'num')
-            complement = target - num;
-            # print(complement, 'complement')
-            if complement in seen:
-                # print(seen.get(complement), 'seen')
-                return [seen[complement], x]
-            seen[num] = x
-            # print(seen)
-         
-           
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        seen = set()
+        for num in nums:
+            if num in seen:
+                return True
+            seen.add(num)
 
-     
+        return False
+          
+
+   
 
 
 # =============================================================================
@@ -42,12 +38,8 @@ class Solution:
 if __name__ == "__main__":
     s = Solution()
 
-    # Test cases
-    print("Test 1:", s.twoSum([2, 7, 11, 15], 9))  # Expected: [0, 1] (adjacent)
-    print("Test 2:", s.twoSum([3, 2, 4], 6))       # Expected: [1, 2] (adjacent)
-    print("Test 3:", s.twoSum([3, 3], 6))          # Expected: [0, 1] (adjacent)
-
-    # Non-adjacent pairs (your current solution will fail these)
-    print("Test 4:", s.twoSum([1, 5, 3, 4], 8))    # Expected: [1, 2] → 5 + 3
-    print("Test 5:", s.twoSum([2, 4, 5, 1], 3))    # Expected: [0, 3] → 2 + 1
-    print("Test 6:", s.twoSum([1, 2, 3, 4, 5], 9)) # Expected: [3, 4] → 4 + 5
+    print("Test 1:", s.containsDuplicate([1, 2, 3, 1]))        # Expected: True
+    print("Test 2:", s.containsDuplicate([1, 2, 3, 4]))        # Expected: False
+    print("Test 3:", s.containsDuplicate([1, 1, 1, 3, 3, 4]))  # Expected: True
+    print("Test 4:", s.containsDuplicate([]))                   # Expected: False
+    print("Test 5:", s.containsDuplicate([1]))                  # Expected: False
